@@ -1,0 +1,230 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #1e1e1e, #4e4e4e);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+
+/* Hero Section */
+.hero {
+  margin-bottom: 40px;
+  max-width: 100vw;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero img {
+  width: 40%;
+  max-width: 400px;
+  height: 311px; /* Fixed height for consistency */
+  margin: 20px; /* Simplified margin */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease; /* Added transform for scaling effect */
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+.hero-text {
+  width: 60%;
+}
+
+.hero-text h2 {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.15em;
+  color: #555;
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+
+
+/* Achievements Section */
+.achievements {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievements h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.achievement {
+  margin-bottom: 20px;
+}
+
+.achievement h3 {
+  font-size: 1.8em;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.achievement p {
+  font-size: 1.15em;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Timeline Section */
+.timeline {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timeline h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.timeline ul {
+  list-style-type: none;
+}
+
+.timeline li {
+  font-size: 1.15em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quote h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.quote blockquote {
+  font-style: italic;
+  color: #555;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #1e1e1e, #4e4e4e);
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.2em;
+  }
+
+  header p {
+      font-size: 1.1em;
+  }
+
+  .hero-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero img {
+      width: 80%;
+      max-width: none;
+  }
+
+  .hero-text {
+      width: 100%;
+  }
+
+  .bio h2, .achievements h2, .timeline h2, .quote h2 {
+      font-size: 1.8em;
+  }
+
+  .bio p, .timeline li, .quote blockquote, .achievements p {
+      font-size: 1em;
+  }
+}
